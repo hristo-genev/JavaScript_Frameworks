@@ -1,6 +1,6 @@
 const path = require('path');
 const Reporting = require('perfecto-reporting');
-const authenticator = require('./authenticator.js');
+const authenticator = require('../../authenticator.js');
 const host = 'demo';
 // Enable proxy, set GLOBAL_AGENT_HTTP_PROXY=http://127.0.0.1:8889
 // require('global-agent/bootstrap')

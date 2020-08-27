@@ -1,9 +1,22 @@
 const fs = require('fs');
+const os = require('os')
 
 exports.getToken = function(cloud) {
   console.log("Finding token for cloud " + cloud);
-  let rawdata = fs.readFileSync('C:\\Users\\hristo\\securityTokens.json');
-  let jsonData = JSON.parse(rawdata);
+  try
+  {
+    let path = process.env.PERFECTO_TOKEN_STORAGE
+    if (!path)
+      path = (os.platform() == 'win32') ? process.env.USERPROFILE + "\\securityTokens.json" : process.env.HOME + "/securityTokens.json";
 
-  return jsonData.tokens[cloud];
+    let rawdata = fs.readFileSync(path);
+    let jsonData = JSON.parse(rawdata);
+
+    return jsonData.tokens[cloud];    
+  }
+  catch(err)
+  {
+    console.log(err)
+    return "NOT FOUND!"
+  }
 };
