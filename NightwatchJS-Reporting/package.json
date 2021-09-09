@@ -1,0 +1,23 @@
+{
+  "name": "perfecto-nightwatch-example",
+  "version": "0.0.1",
+  "description": "A Nightwatch.js example setup for use with Perfecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch -e windows_chrome -c nightwatch.conf.js",
+    "test1": "nightwatch -e windows_chrome -c nightwatch.conf.js tests/google.js --verbose"
+  },
+  "keywords": [
+    "perfecto",
+    "nightwatch.js"
+  ],
+  "devDependencies": {
+    "fs": "0.0.2",
+    "getenv": "^0.6.0",
+    "mkdirp": "^0.5.1",
+    "nightwatch": "^0.9.5",
+    "perfecto-reporting": "^2.0.0",
+    "request": "^2.81.0",
+    "selenium-webdriver": "^2.53.3"
+  }
+}

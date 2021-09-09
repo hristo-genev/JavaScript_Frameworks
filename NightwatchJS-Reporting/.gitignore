@@ -1,0 +1,7 @@
+# node modules
+/node_modules
+
+# test results directory
+/tests_output
+
+/package-lock.json
