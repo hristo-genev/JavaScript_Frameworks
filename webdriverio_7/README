@@ -1,0 +1,5 @@
+WDIO 7
+
+To run any config execute:
+
+npx wdio run ./wdio.perfecto.reporting.conf.js
