@@ -1,0 +1,390 @@
+CustomerSupportBul:webdriverio_7 admin$ npm run applitools
+
+> webdriverio_7@1.0.0 applitools /Users/admin/Git/JavaScript_Frameworks/webdriverio_7
+> npx wdio wdio.perfecto.applitools.conf.js
+
+Finding token for cloud nab.perfectomobile.com
+Using file /Users/admin/securityTokens.json
+Token found!
+
+Execution of 1 workers started at 2022-03-23T07:15:22.038Z
+
+2022-03-23T07:15:22.039Z INFO @wdio/cli:launcher: Run onPrepare hook
+2022-03-23T07:15:22.040Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2022-03-23T07:15:22.041Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.perfecto.applitools.conf.js
+[0-0] 2022-03-23T07:15:22.168Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+[0-0] 2022-03-23T07:15:22.535Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2022-03-23T07:15:22.539Z DEBUG @wdio/config:ConfigParser: No compiler found, continue without compiling files
+[0-0] Finding token for cloud nab.perfectomobile.com
+[0-0] Using file /Users/admin/securityTokens.json
+[0-0] Token found!
+[0-0] 2022-03-23T07:15:23.318Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2022-03-23T07:15:23.399Z WARN @wdio/utils:shim: You are running tests with @wdio/sync which will be discontinued starting Node.js v16.Read more on https://github.com/webdriverio/webdriverio/discussions/6702
+[0-0] RUNNING in Chrome - /test/specs/applitools.js
+[0-0] 2022-03-23T07:15:23.526Z DEBUG @wdio/local-runner:utils: init remote session
+[0-0] 2022-03-23T07:15:23.528Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2022-03-23T07:15:23.561Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session
+[0-0] 2022-03-23T07:15:23.561Z INFO webdriver: DATA {
+[0-0]   capabilities: {
+[0-0]     alwaysMatch: {
+[0-0]       'perfecto:options': [Object],
+[0-0]       browserName: 'Chrome',
+[0-0]       platformName: 'Android'
+[0-0]     },
+[0-0]     firstMatch: [ {} ]
+[0-0]   },
+[0-0]   desiredCapabilities: {
+[0-0]     'perfecto:options': {
+[0-0]       securityToken: 'eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhMDNiNzQ1MS0zOTM2LTQ0MWYtYTNmOC02N2JmZTEyYmUyNWEifQ.eyJqdGkiOiI2ZGI2MGRiZi1kMWI5LTQyMTMtYmY2Yy00NGVlZWRmYWMwNGEiLCJleHAiOjAsIm5iZiI6MCwiaWF0IjoxNTkyODMyNzYyLCJpc3MiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL25hYi1wZXJmZWN0b21vYmlsZS1jb20iLCJhdWQiOiJodHRwczovL2F1dGgucGVyZmVjdG9tb2JpbGUuY29tL2F1dGgvcmVhbG1zL25hYi1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiI5NmIxYWQ0Ny1hNDllLTQxOWMtOWQwYy00NzYzZmIzODZhNDciLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6ImZlMjkwYTdkLTdkZTgtNDE5Ny04ZTQ5LTk1NmZiYzA5Yjc4MCIsImF1dGhfdGltZSI6MCwic2Vzc2lvbl9zdGF0ZSI6Ijc4OTIzN2MyLTg3YjMtNDgyNy04OGIyLTI2M2U1MzUyNTVhMCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVwb3J0aXVtIjp7InJvbGVzIjpbInVzZXJfbWFuYWdlbWVudF9hZG1pbiIsImNvbmZfYWRtaW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIn0.Xh1saxEfeHR8y0-7-g2LnxU_u3U0rkyxzXIetx7V1EQ',
+[0-0]       enableAppiumBehavior: true,
+[0-0]       useAppiumForWeb: true,
+[0-0]       platformVersion: '11'
+[0-0]     },
+[0-0]     browserName: 'Chrome',
+[0-0]     platformName: 'Android'
+[0-0]   }
+[0-0] }
+[0-0] 2022-03-23T07:15:43.672Z DEBUG @wdio/sync: Finished to run "before" hook in 0ms
+[0-0] Started beforeSuite()
+[0-0] Trying to open eyes connection
+[0-0] 2022-03-23T07:15:43.683Z INFO webdriver: COMMAND getSession()
+[0-0] 2022-03-23T07:15:43.683Z INFO webdriver: [GET] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538
+[0-0] 2022-03-23T07:15:44.872Z INFO webdriver: RESULT {
+[0-0]   acceptInsecureCerts: false,
+[0-0]   acceptSslCerts: false,
+[0-0]   applicationCacheEnabled: false,
+[0-0]   browserConnectionEnabled: false,
+[0-0]   browserName: 'chrome',
+[0-0]   chrome: {
+[0-0]     chromedriverVersion: '97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247})'
+[0-0]   },
+[0-0]   cssSelectorsEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   'goog:chromeOptions': { debuggerAddress: 'localhost:11954' },
+[0-0]   handlesAlerts: true,
+[0-0]   hasTouchScreen: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   locationContextEnabled: true,
+[0-0]   mobileEmulationEnabled: false,
+[0-0]   nativeEvents: true,
+[0-0]   pageLoadStrategy: 'normal',
+[0-0]   platform: 'ANDROID',
+[0-0]   proxy: {},
+[0-0]   rotatable: false,
+[0-0]   setWindowRect: false,
+[0-0]   strictFileInteractability: false,
+[0-0]   takesHeapSnapshot: true,
+[0-0]   takesScreenshot: true,
+[0-0]   timeouts: { implicit: 0, pageLoad: 300000, script: 30000 },
+[0-0]   unexpectedAlertBehaviour: 'ignore',
+[0-0]   version: '97.0.4692.98',
+[0-0]   webStorageEnabled: true,
+[0-0]   'webauthn:extension:credBlob': false,
+[0-0]   'webauthn:extension:largeBlob': false,
+[0-0]   'webauthn:virtualAuthenticators': false
+[0-0] }
+[0-0] 2022-03-23T07:15:44.873Z  INFO   Driver capabilities {
+[0-0]   acceptInsecureCerts: false,
+[0-0]   acceptSslCerts: false,
+[0-0]   applicationCacheEnabled: false,
+[0-0]   browserConnectionEnabled: false,
+[0-0]   browserName: 'chrome',
+[0-0]   chrome: {
+[0-0]     chromedriverVersion: '97.0.4692.71 (adefa7837d02a07a604c1e6eff0b3a09422ab88d-refs/branch-heads/4692@{#1247})'
+[0-0]   },
+[0-0]   cssSelectorsEnabled: true,
+[0-0]   databaseEnabled: false,
+[0-0]   'goog:chromeOptions': { debuggerAddress: 'localhost:11954' },
+[0-0]   handlesAlerts: true,
+[0-0]   hasTouchScreen: true,
+[0-0]   javascriptEnabled: true,
+[0-0]   locationContextEnabled: true,
+[0-0]   mobileEmulationEnabled: false,
+[0-0]   nativeEvents: true,
+[0-0]   pageLoadStrategy: 'normal',
+[0-0]   platform: 'ANDROID',
+[0-0]   proxy: {},
+[0-0]   rotatable: false,
+[0-0]   setWindowRect: false,
+[0-0]   strictFileInteractability: false,
+[0-0]   takesHeapSnapshot: true,
+[0-0]   takesScreenshot: true,
+[0-0]   timeouts: { implicit: 0, pageLoad: 300000, script: 30000 },
+[0-0]   unexpectedAlertBehaviour: 'ignore',
+[0-0]   version: '97.0.4692.98',
+[0-0]   webStorageEnabled: true,
+[0-0]   'webauthn:extension:credBlob': false,
+[0-0]   'webauthn:extension:largeBlob': false,
+[0-0]   'webauthn:virtualAuthenticators': false
+[0-0] }
+[0-0] 2022-03-23T07:15:44.875Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:15:44.875Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:15:44.875Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";return function(){return window.devicePixelRatio}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2022-03-23T07:15:45.972Z INFO webdriver: RESULT 3.5
+[0-0] 2022-03-23T07:15:45.973Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:15:45.973Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:15:45.973Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";return function(){return window.navigator.userAgent}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2022-03-23T07:15:47.140Z INFO webdriver: RESULT Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36
+[0-0] 2022-03-23T07:15:47.142Z  INFO   Combined driver info {
+[0-0]   browserName: 'Chrome',
+[0-0]   browserVersion: '97',
+[0-0]   platformName: 'ANDROID',
+[0-0]   platformVersion: '11',
+[0-0]   isW3C: false,
+[0-0]   isMobile: false,
+[0-0]   sessionId: '6c45cbdc-1ebe-41ac-a361-3daea8aba538',
+[0-0]   pixelRatio: 3.5,
+[0-0]   userAgent: 'Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.98 Mobile Safari/537.36',
+[0-0]   features: { allCookies: true }
+[0-0] }
+[0-0] 2022-03-23T07:15:47.142Z  INFO   Extracting viewport size from web driver using js snippet
+[0-0] 2022-03-23T07:15:47.143Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:15:47.143Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:15:47.143Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";return function(){var e=0,t=0;return window.innerHeight?t=window.innerHeight:document.documentElement&&document.documentElement.clientHeight?t=document.documentElement.clientHeight:document.body&&document.body.clientHeight&&(t=document.body.clientHeight),window.innerWidth?e=window.innerWidth:document.documentElement&&document.documentElement.clientWidth?e=document.documentElement.clientWidth:document.body&&document.body.clientWidth&&(e=document.body.clientWidth),{width:e,height:t}}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2022-03-23T07:15:48.310Z INFO webdriver: RESULT { height: 1829, width: 980 }
+[0-0] 2022-03-23T07:15:48.310Z  INFO   Extracted viewport size { height: 1829, width: 980 }
+[0-0] 2022-03-23T07:15:48.312Z  INFO   vgc concurrency is 5
+[0-0] 2022-03-23T07:15:48.313Z  INFO   Setting viewport size to { width: 980, height: 1829 } using workaround
+[0-0] 2022-03-23T07:15:48.314Z  INFO   Extracting viewport size from web driver using js snippet
+[0-0] 2022-03-23T07:15:48.314Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:15:48.314Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:15:48.314Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";return function(){var e=0,t=0;return window.innerHeight?t=window.innerHeight:document.documentElement&&document.documentElement.clientHeight?t=document.documentElement.clientHeight:document.body&&document.body.clientHeight&&(t=document.body.clientHeight),window.innerWidth?e=window.innerWidth:document.documentElement&&document.documentElement.clientWidth?e=document.documentElement.clientWidth:document.body&&document.body.clientWidth&&(e=document.body.clientWidth),{width:e,height:t}}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2022-03-23T07:15:49.478Z INFO webdriver: RESULT { height: 1829, width: 980 }
+[0-0] 2022-03-23T07:15:49.478Z  INFO   Extracted viewport size { height: 1829, width: 980 }
+[0-0] 2022-03-23T07:15:49.479Z  INFO   openEyes: testName=Trying Applitools, browser= [
+[0-0]   {
+[0-0]     chromeEmulationInfo: { deviceName: 'Pixel 3', screenOrientation: 'portrait' }
+[0-0]   },
+[0-0]   {
+[0-0]     chromeEmulationInfo: { deviceName: 'Pixel 3', screenOrientation: 'landscape' }
+[0-0]   }
+[0-0] ]
+[0-0] 2022-03-23T07:15:49.481Z  INFO   runnerStartedEvent {
+[0-0]   timestamp: '2022-03-23T07:15:49.481Z',
+[0-0]   level: 'Notice',
+[0-0]   event: {
+[0-0]     type: 'runnerStarted',
+[0-0]     concurrency: 1,
+[0-0]     testConcurrency: undefined,
+[0-0]     defaultConcurrency: undefined,
+[0-0]     node: { version: 'v12.22.5', platform: 'darwin', arch: 'x64' }
+[0-0]   }
+[0-0] }
+[0-0] 2022-03-23T07:15:50.460Z  INFO   Device Info: Pixel 3 (Chrome emulation)
+[0-0] 2022-03-23T07:15:50.461Z  INFO   setBatch(BatchInfo { {"id":"generated-119026b9-c1a9-474f-8b2e-122ecea53d7d","name":"Ultrafast Batch","properties":[],"startedAt":"2022-03-23T07:15:49.480Z","notifyOnCompletion":false} })
+[0-0] 2022-03-23T07:15:50.461Z  INFO   Device Info: Pixel 3 (Chrome emulation)
+[0-0] 2022-03-23T07:15:50.461Z  INFO   setBatch(BatchInfo { {"id":"generated-119026b9-c1a9-474f-8b2e-122ecea53d7d","name":"Ultrafast Batch","properties":[],"startedAt":"2022-03-23T07:15:49.480Z","notifyOnCompletion":false} })
+[0-0] 2022-03-23T07:15:50.461Z  INFO   openEyes: opening wrappers
+[0-0] 2022-03-23T07:15:50.462Z  INFO   Agent = eyes-webdriverio.visualgrid/5.34.3
+[0-0] 2022-03-23T07:15:50.462Z  INFO   openBase('NAB.COM.AU', 'Trying Applitools', 'undefined')
+[0-0] 2022-03-23T07:15:50.462Z  INFO   Agent = eyes-webdriverio.visualgrid/5.34.3
+[0-0] 2022-03-23T07:15:50.462Z  INFO   openBase('NAB.COM.AU', 'Trying Applitools', 'undefined')
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Eyes server URL is 'https://eyesapi.applitools.com'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Timeout = 'undefined'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   matchTimeout = '2000'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Default match settings = 'ImageMatchSettings { {"matchLevel":"Strict","ignoreCaret":true,"useDom":false,"enablePatterns":false,"ignoreDisplacements":true,"ignore":[],"layout":[],"strict":[],"content":[],"accessibility":[],"floating":[]} }'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   FailureReports = 'ON_CLOSE'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Eyes server URL is 'https://eyesapi.applitools.com'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Timeout = 'undefined'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   matchTimeout = '2000'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   Default match settings = 'ImageMatchSettings { {"matchLevel":"Strict","ignoreCaret":true,"useDom":false,"enablePatterns":false,"ignoreDisplacements":true,"ignore":[],"layout":[],"strict":[],"content":[],"accessibility":[],"floating":[]} }'
+[0-0] 2022-03-23T07:15:50.463Z  INFO   FailureReports = 'ON_CLOSE'
+[0-0] 2022-03-23T07:15:50.464Z DEBUG @wdio/sync: Finished to run "beforeSuite" hook in 6786ms
+[0-0] 2022-03-23T07:15:50.467Z INFO webdriver: COMMAND executeScript("mobile:test:start", <object>)
+[0-0] 2022-03-23T07:15:50.468Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:15:50.468Z INFO webdriver: DATA {
+[0-0]   script: 'mobile:test:start',
+[0-0]   args: [
+[0-0]     {
+[0-0]       name: 'Load page and runs Eyes.check',
+[0-0]       tags: [Array],
+[0-0]       customFields: []
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2022-03-23T07:15:51.524Z INFO webdriver: RESULT 6c45cbdc-1ebe-41ac-a361-3daea8aba538_TEST_ViiHC
+[0-0] 2022-03-23T07:15:52.026Z DEBUG @wdio/sync: Finished to run "beforeTest" hook in 1559ms
+[0-0] 2022-03-23T07:15:52.028Z INFO webdriver: COMMAND navigateTo("https://perfecto.io/")
+[0-0] 2022-03-23T07:15:52.028Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/url
+[0-0] 2022-03-23T07:15:52.028Z INFO webdriver: DATA { url: 'https://perfecto.io/' }
+[0-0] 2022-03-23T07:16:00.423Z  INFO   check started with tag "Perfecto" for test "Trying Applitools"
+[0-0] 2022-03-23T07:16:00.423Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:16:00.424Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:16:00.424Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";var t=function(t){var n=(void 0===t?[]:t)[0],e="",r=n.ownerDocument;if(!r)return e;for(var o=n;o!==r;){var a=Array.prototype.filter.call(o.parentNode.childNodes,(function(t){return t.tagName===o.tagName})).indexOf(o);e="/"+o.tagName+"["+(a+1)+"]"+e,o=o.parentNode}return e};return function(){var n,e,r;try{n=window.top.document===window.document}catch(t){n=!1}try{e=!window.parent.document===window.document}catch(t){e=!0}if(!e)try{r=t([window.frameElement])}catch(t){r=null}return[document.documentElement,r,n,e]}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ undefined ]
+[0-0] }
+[0-0] 2022-03-23T07:16:01.789Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '0.34625213685947687-1',
+[0-0]     ELEMENT: '0.34625213685947687-1'
+[0-0]   },
+[0-0]   null,
+[0-0]   true,
+[0-0]   false
+[0-0] ]
+[0-0] 2022-03-23T07:16:01.789Z  INFO   Switching to a child context with depth: 0
+[0-0] 2022-03-23T07:16:01.790Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:16:01.790Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:16:01.790Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     `var s=function(){"use strict";return function(t){var o=t[0],e=t[1];return o.map((function(t,o){var r=[t];if(t.getRootNode)for(var a=t.getRootNode();a!==document;a=a.host.getRootNode())r.push(a.host);var n=e[o];return r.map((function(t){var o=t.getAttribute("data-applitools-selector"),e=o?o+" "+n:n;return t.setAttribute("data-applitools-selector",e),'[data-applitools-selector~="'+n+'"]'}))}))}}();\n` +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ [ [], [] ] ]
+[0-0] }
+[0-0] 2022-03-23T07:16:02.995Z INFO webdriver: RESULT []
+[0-0] 2022-03-23T07:16:02.996Z  INFO   elements marked: 
+[0-0] 2022-03-23T07:16:02.997Z INFO webdriver: COMMAND sendCommandAndGetResult("Network.getAllCookies", <object>)
+[0-0] 2022-03-23T07:16:02.997Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/chromium/send_command_and_get_result
+[0-0] 2022-03-23T07:16:02.997Z INFO webdriver: DATA { cmd: 'Network.getAllCookies', params: {} }
+[0-0] 2022-03-23T07:16:05.457Z DEBUG webdriver: request failed due to status 9
+[0-0] 2022-03-23T07:16:05.457Z ERROR webdriver: Request failed with status 404 due to unknown command: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+[0-0] 2022-03-23T07:16:05.458Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+[0-0] 2022-03-23T07:16:05.458Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:16:05.458Z INFO webdriver: DATA {
+[0-0]   script: 'return (function(arg){\n' +
+[0-0]     'var s=function(){"use strict";return function(t){t[0].forEach((function(t){if(t.removeAttribute("data-applitools-selector"),t.getRootNode)for(var o=t.getRootNode();o!==document;o=o.host.getRootNode())o.host.removeAttribute("data-applitools-selector")}))}}();\n' +
+[0-0]     'return s(arg)\n' +
+[0-0]     '}).apply(null, arguments)',
+[0-0]   args: [ [ [] ] ]
+[0-0] }
+[0-0] 2022-03-23T07:16:06.537Z  INFO   elements cleaned up: 
+[0-0] * * * result get the error unknown command: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+[0-0]     at getErrorFromResponseBody (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/utils.js:196:12)
+[0-0]     at NodeJSRequest._request (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/request/index.js:157:60)
+[0-0]     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[0-0]     at async Object.getCookies (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/spec-driver-webdriverio/dist/spec-driver.js:220:26)
+[0-0]     at async takeDomSnapshots (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/utils/takeDomSnapshots.js:19:50)
+[0-0]     at async /Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:159:38
+[0-0]     at async Object._checkPrepare (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:216:14)
+[0-0]     at async Object.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/new/check.js:6:20)
+[0-0]     at async Eyes.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-api/dist/Eyes.js:204:24)
+[0-0]     at async Context.<anonymous> (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/test/specs/applitools.js:10:5)
+[0-0] 2022-03-23T07:16:06.538Z DEBUG @wdio/sync: Finished to run "afterTest" hook in 0ms
+[0-0] unknown command in "Trying Applitools.Load page and runs Eyes.check"
+unknown command: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+    at getErrorFromResponseBody (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/utils.js:196:12)
+    at NodeJSRequest._request (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/request/index.js:157:60)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Object.getCookies (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/spec-driver-webdriverio/dist/spec-driver.js:220:26)
+    at async takeDomSnapshots (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/utils/takeDomSnapshots.js:19:50)
+    at async /Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:159:38
+    at async Object._checkPrepare (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:216:14)
+    at async Object.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/new/check.js:6:20)
+    at async Eyes.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-api/dist/Eyes.js:204:24)
+    at async Context.<anonymous> (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/test/specs/applitools.js:10:5)
+[0-0] Finished running suite Trying Applitools
+[0-0] Status: 0
+[0-0] 2022-03-23T07:16:06.541Z  INFO   user aborted test Trying Applitools
+[0-0] 2022-03-23T07:16:06.542Z  INFO   waitForTestEnd() checkWindow 0 done
+[0-0] 2022-03-23T07:16:06.542Z  INFO   waitForTestEnd() checkWindow 1 done
+[0-0] 2022-03-23T07:16:06.542Z  INFO   waitForTestEnd() open 0 done
+[0-0] 2022-03-23T07:16:06.542Z  INFO   Closed
+[0-0] 2022-03-23T07:16:06.542Z  INFO   waitForTestEnd() open 1 done
+[0-0] 2022-03-23T07:16:06.542Z  INFO   Closed
+[0-0] 2022-03-23T07:16:06.542Z INFO webdriver: COMMAND executeScript("mobile:test:end", <object>)
+[0-0] 2022-03-23T07:16:06.543Z INFO webdriver: [POST] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538/execute/sync
+[0-0] 2022-03-23T07:16:06.543Z INFO webdriver: DATA { script: 'mobile:test:end', args: [ { success: true } ] }
+[0-0] 2022-03-23T07:16:06.544Z DEBUG @wdio/sync: Finished to run "afterSuite" hook in 2ms
+[0-0] Reporting URL: https://nab.app.perfectomobile.com/reporting/library?externalId[0]=6c45cbdc-1ebe-41ac-a361-3daea8aba538
+[0-0] 2022-03-23T07:16:12.507Z  INFO   Failed to close batch: error occurred Error: Error in request deleteBatchSessions: Request failed with status code 404 (Not Found)
+[0-0] Batch not found
+[0-0]     at handleRequestError (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/server/requestHelpers.js:234:9)
+[0-0]     at /Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/server/ServerConnector.js:132:14
+[0-0]     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[0-0]     at async ServerConnector.deleteBatchSessions (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/server/ServerConnector.js:253:22)
+[0-0]     at async Object.closeBatch (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesBase.js:1783:9)
+[0-0]     at async Promise.all (index 0)
+[0-0]     at async VisualGridRunner._closeAllBatches (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/runner/EyesRunner.js:79:7)
+[0-0]     at async VisualGridRunner.getAllTestResults (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/runner/EyesRunner.js:43:5)
+[0-0]     at async Object.closeAllEyes (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/new/close-all-eyes.js:7:21)
+[0-0]     at async VisualGridRunner.getAllTestResults (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-api/dist/Runners.js:53:29)
+[0-0] APPLITOOLS RESULTS: 
+[0-0] TestResultsSummaryData {
+[0-0]   _results: [],
+[0-0]   _passed: 0,
+[0-0]   _unresolved: 0,
+[0-0]   _failed: 0,
+[0-0]   _exceptions: 0,
+[0-0]   _mismatches: 0,
+[0-0]   _missing: 0,
+[0-0]   _matches: 0
+[0-0] }
+[0-0] after() ended
+[0-0] 2022-03-23T07:16:12.508Z DEBUG @wdio/sync: Finished to run "after" hook in 5956ms
+[0-0] 2022-03-23T07:16:12.509Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2022-03-23T07:16:12.510Z INFO webdriver: [DELETE] https://nab.perfectomobile.com/nexperience/perfectomobile/wd/hub/fast/session/6c45cbdc-1ebe-41ac-a361-3daea8aba538
+2022-03-23T07:16:28.313Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in Chrome - /test/specs/applitools.js
+2022-03-23T07:16:28.314Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2022-03-23T07:16:28.314Z INFO @wdio/cli:launcher: Run onComplete hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[99161FFBA003TV android 11 #0-0] Running: 99161FFBA003TV on android 11 executing Chrome
+[99161FFBA003TV android 11 #0-0] Session ID: 6c45cbdc-1ebe-41ac-a361-3daea8aba538
+[99161FFBA003TV android 11 #0-0]
+[99161FFBA003TV android 11 #0-0] » /test/specs/applitools.js
+[99161FFBA003TV android 11 #0-0] Trying Applitools
+[99161FFBA003TV android 11 #0-0]    ✖ Load page and runs Eyes.check
+[99161FFBA003TV android 11 #0-0]
+[99161FFBA003TV android 11 #0-0] 1 failing (44.5s)
+[99161FFBA003TV android 11 #0-0]
+[99161FFBA003TV android 11 #0-0] 1) Trying Applitools Load page and runs Eyes.check
+[99161FFBA003TV android 11 #0-0] The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+[99161FFBA003TV android 11 #0-0] unknown command: The requested resource could not be found, or a request was received using an HTTP method that is not supported by the mapped resource
+[99161FFBA003TV android 11 #0-0]     at getErrorFromResponseBody (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/utils.js:196:12)
+[99161FFBA003TV android 11 #0-0]     at NodeJSRequest._request (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@wdio/runner/node_modules/webdriver/build/request/index.js:157:60)
+[99161FFBA003TV android 11 #0-0]     at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[99161FFBA003TV android 11 #0-0]     at async Object.getCookies (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/spec-driver-webdriverio/dist/spec-driver.js:220:26)
+[99161FFBA003TV android 11 #0-0]     at async takeDomSnapshots (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/utils/takeDomSnapshots.js:19:50)
+[99161FFBA003TV android 11 #0-0]     at async /Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:159:38
+[99161FFBA003TV android 11 #0-0]     at async Object._checkPrepare (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/sdk/EyesVisualGrid.js:216:14)
+[99161FFBA003TV android 11 #0-0]     at async Object.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-sdk-core/lib/new/check.js:6:20)
+[99161FFBA003TV android 11 #0-0]     at async Eyes.check (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/node_modules/@applitools/eyes-api/dist/Eyes.js:204:24)
+[99161FFBA003TV android 11 #0-0]     at async Context.<anonymous> (/Users/admin/Git/JavaScript_Frameworks/webdriverio_7/test/specs/applitools.js:10:5)
+
+
+Spec Files:	 0 passed, 1 failed, 1 total (100% completed) in 00:01:06 
+
+2022-03-23T07:16:28.316Z INFO @wdio/local-runner: Shutting down spawned worker
+2022-03-23T07:16:28.578Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2022-03-23T07:16:28.578Z INFO @wdio/local-runner: shutting down
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! webdriverio_7@1.0.0 applitools: `npx wdio wdio.perfecto.applitools.conf.js`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the webdriverio_7@1.0.0 applitools script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /Users/admin/.npm/_logs/2022-03-23T07_16_28_601Z-debug.log

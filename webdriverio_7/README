@@ -1,5 +1,11 @@
 WDIO 7
+On MAC enable and start Safari driver:  
+/usr/bin/safaridriver --port 4444
 
 To run any config execute:
 
 npx wdio run ./wdio.perfecto.reporting.conf.js
+
+or
+
+npx wdio wdio.perfecto.conf.js --spec test/specs/bundleId.js
