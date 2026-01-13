@@ -1,0 +1,125 @@
+➜  wdio9 git:(master) ✗ npx wdio run ./wdio.perfecto.conf.js --spec tap.on.native.js
+
+Execution of 1 workers started at 2025-09-24T12:03:11.108Z
+
+2025-09-24T12:03:11.115Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-09-24T12:03:11.116Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-09-24T12:03:11.117Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-09-24T12:03:11.117Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-09-24T12:03:11.117Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.perfecto.conf.js --spec tap.on.native.js
+2025-09-24T12:03:11.125Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-09-24T12:03:11.125Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-09-24T12:03:11.126Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+2025-09-24T12:03:11.127Z DEBUG @wdio/local-runner: Send command run to worker with cid "0-0"
+[0-0] 2025-09-24T12:03:11.847Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2025-09-24T12:03:12.078Z DEBUG @wdio/runner: init remote session
+[0-0] RUNNING in iOS(18.0) on iOS - file:///test/specs/tap.on.native.js
+[0-0] 2025-09-24T12:03:12.146Z DEBUG @wdio/runner: init remote session
+[0-0] 2025-09-24T12:03:12.147Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-09-24T12:03:12.147Z INFO @wdio/utils: Connecting to existing driver at http://demo.perfectomobile.com:80/nexperience/perfectomobile/wd/hub
+[0-0] 2025-09-24T12:03:12.152Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session
+[0-0] 2025-09-24T12:03:46.879Z DEBUG @wdio/utils:shim: Finished to run "beforeTest" hook in 0ms
+[0-0] 2025-09-24T12:03:46.880Z INFO webdriver: COMMAND executeScript("mobile: launchApp", <object>)
+[0-0] 2025-09-24T12:03:46.881Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/execute/sync
+[0-0] 2025-09-24T12:03:46.881Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: launchApp',
+[0-0]   args: [ { bundleId: 'com.apple.Preferences' } ]
+[0-0] }
+[0-0] 2025-09-24T12:03:49.300Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:03:52.307Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:03:52.309Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/element
+[0-0] 2025-09-24T12:03:52.309Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:03:53.102Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:130:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:90:10)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:23:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)'
+[0-0] }
+[0-0] 2025-09-24T12:03:53.123Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:03:53.124Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/element
+[0-0] 2025-09-24T12:03:53.124Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:03:53.668Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:130:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:90:10)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:23:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:33:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/usr/local/avm/versions/1.22.3/node_modules/appium/node_modules/appium-base-driver/lib/basedriver/commands/find.js:53:10)'
+[0-0] }
+[0-0] 2025-09-24T12:03:53.673Z INFO webdriver: COMMAND findElements("-ios predicate string", "type == "XCUIElementTypeApplication"")
+[0-0] 2025-09-24T12:03:53.673Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/elements
+[0-0] 2025-09-24T12:03:53.673Z INFO webdriver: DATA {
+[0-0]   using: '-ios predicate string',
+[0-0]   value: 'type == "XCUIElementTypeApplication"'
+[0-0] }
+[0-0] 2025-09-24T12:03:53.948Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '01000000-0000-0000-8EAF-000000000000',
+[0-0]     ELEMENT: '01000000-0000-0000-8EAF-000000000000'
+[0-0]   }
+[0-0] ]
+[0-0] 2025-09-24T12:03:53.964Z INFO webdriver: COMMAND getElementRect("01000000-0000-0000-8EAF-000000000000")
+[0-0] 2025-09-24T12:03:53.964Z INFO webdriver: [GET] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/element/01000000-0000-0000-8EAF-000000000000/rect
+[0-0] 2025-09-24T12:03:54.199Z INFO webdriver: RESULT { y: 0, x: 0, width: 430, height: 932 }
+[0-0] 2025-09-24T12:03:54.201Z INFO webdriver: COMMAND performActions(<object>)
+[0-0] 2025-09-24T12:03:54.202Z INFO webdriver: [POST] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/actions
+[0-0] 2025-09-24T12:03:54.202Z INFO webdriver: DATA {
+[0-0]   actions: [
+[0-0]     {
+[0-0]       id: 'action1',
+[0-0]       type: 'pointer',
+[0-0]       parameters: [Object],
+[0-0]       actions: [Array]
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2025-09-24T12:03:56.828Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:03:56.829Z INFO webdriver: COMMAND releaseActions()
+[0-0] 2025-09-24T12:03:56.830Z INFO webdriver: [DELETE] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/actions
+[0-0] 2025-09-24T12:03:57.410Z DEBUG webdriver: request failed due to response error: unknown error
+[0-0] 2025-09-24T12:03:57.413Z WARN webdriver: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[0-0] 2025-09-24T12:03:57.413Z INFO webdriver: Retrying 1/3
+[0-0] 2025-09-24T12:03:57.413Z INFO webdriver: [DELETE] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/actions
+[0-0] 2025-09-24T12:03:58.015Z DEBUG webdriver: request failed due to response error: unknown error
+[0-0] 2025-09-24T12:03:58.516Z WARN webdriver: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[0-0] 2025-09-24T12:03:58.517Z INFO webdriver: Retrying 2/3
+[0-0] 2025-09-24T12:03:58.517Z INFO webdriver: [DELETE] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/actions
+[0-0] 2025-09-24T12:03:59.146Z DEBUG webdriver: request failed due to response error: unknown error
+[0-0] 2025-09-24T12:04:00.147Z WARN webdriver: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[0-0] 2025-09-24T12:04:00.148Z INFO webdriver: Retrying 3/3
+[0-0] 2025-09-24T12:04:00.149Z INFO webdriver: [DELETE] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903/actions
+[0-0] 2025-09-24T12:04:00.633Z DEBUG webdriver: request failed due to response error: unknown error
+[0-0] 2025-09-24T12:04:00.633Z ERROR webdriver: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[0-0] 2025-09-24T12:04:00.716Z DEBUG @wdio/utils:shim: Finished to run "afterTest" hook in 0ms
+[0-0] unknown error in "Scroll into view and tap on native app.should scroll into view and tap on Apps"
+unknown error: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[0-0] 2025-09-24T12:04:00.720Z DEBUG @wdio/utils:shim: Finished to run "after" hook in 0ms
+[0-0] 2025-09-24T12:04:00.720Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-09-24T12:04:00.720Z INFO webdriver: [DELETE] http://demo.perfectomobile.com/nexperience/perfectomobile/wd/hub/session/1c78052c-36a9-47da-9098-f6c59d2ac903
+[0-0] 2025-09-24T12:04:07.357Z INFO webdriver: RESULT null
+2025-09-24T12:04:07.496Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 1
+[0-0] FAILED in iOS(18.0) on iOS - file:///test/specs/tap.on.native.js
+2025-09-24T12:04:07.497Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iPhone 15 Pro Max iOS 18.0 #0-0] Running: iPhone 15 Pro Max on iOS 18.0
+[iPhone 15 Pro Max iOS 18.0 #0-0] Session ID: 1c78052c-36a9-47da-9098-f6c59d2ac903
+[iPhone 15 Pro Max iOS 18.0 #0-0]
+[iPhone 15 Pro Max iOS 18.0 #0-0] » test/specs/tap.on.native.js
+[iPhone 15 Pro Max iOS 18.0 #0-0] Scroll into view and tap on native app
+[iPhone 15 Pro Max iOS 18.0 #0-0]    ✖ should scroll into view and tap on Apps
+[iPhone 15 Pro Max iOS 18.0 #0-0]
+[iPhone 15 Pro Max iOS 18.0 #0-0] 1 failing (20.4s)
+[iPhone 15 Pro Max iOS 18.0 #0-0]
+[iPhone 15 Pro Max iOS 18.0 #0-0] 1) Scroll into view and tap on native app should scroll into view and tap on Apps
+[iPhone 15 Pro Max iOS 18.0 #0-0] WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"
+[iPhone 15 Pro Max iOS 18.0 #0-0] unknown error: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Request failed with status code 400 when running "actions" with method "DELETE"

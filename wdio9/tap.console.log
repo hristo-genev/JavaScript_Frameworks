@@ -1,0 +1,136 @@
+https://demo.app.perfectomobile.com/reporting/test/5dc49f72-eb3a-4365-ba74-536d57dac4be
+
+
+ wdio9 git:(master) ✗ npx wdio run ./wdio.conf.js --spec tap.on.native.js
+
+Execution of 1 workers started at 2025-09-24T12:07:23.589Z
+
+2025-09-24T12:07:23.597Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-09-24T12:07:23.598Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-09-24T12:07:23.598Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-09-24T12:07:23.598Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-09-24T12:07:23.598Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.conf.js --spec tap.on.native.js
+2025-09-24T12:07:23.606Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-09-24T12:07:23.606Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-09-24T12:07:23.607Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+2025-09-24T12:07:23.608Z DEBUG @wdio/local-runner: Send command run to worker with cid "0-0"
+[0-0] 2025-09-24T12:07:24.408Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2025-09-24T12:07:24.666Z DEBUG @wdio/runner: init remote session
+[0-0] RUNNING in iOS(18.0) on iOS - file:///test/specs/tap.on.native.js
+[0-0] 2025-09-24T12:07:24.736Z DEBUG @wdio/runner: init remote session
+[0-0] 2025-09-24T12:07:24.737Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-09-24T12:07:24.737Z INFO @wdio/utils: Connecting to existing driver at http://localhost:4723/wd/hub
+[0-0] 2025-09-24T12:07:24.743Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+[0-0] 2025-09-24T12:07:26.069Z DEBUG @wdio/utils:shim: Finished to run "beforeTest" hook in 0ms
+[0-0] 2025-09-24T12:07:26.070Z INFO webdriver: COMMAND executeScript("mobile: launchApp", <object>)
+[0-0] 2025-09-24T12:07:26.071Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/execute/sync
+[0-0] 2025-09-24T12:07:26.071Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: launchApp',
+[0-0]   args: [ { bundleId: 'com.apple.Preferences' } ]
+[0-0] }
+[0-0] 2025-09-24T12:07:26.104Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:07:29.112Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:07:29.113Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/element
+[0-0] 2025-09-24T12:07:29.113Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:07:29.216Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:143:13)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:97:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:24:14)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:07:29.220Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:07:29.220Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/element
+[0-0] 2025-09-24T12:07:29.220Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:07:29.293Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:143:13)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:97:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:24:14)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:07:29.294Z INFO webdriver: COMMAND findElements("-ios predicate string", "type == "XCUIElementTypeApplication"")
+[0-0] 2025-09-24T12:07:29.295Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/elements
+[0-0] 2025-09-24T12:07:29.295Z INFO webdriver: DATA {
+[0-0]   using: '-ios predicate string',
+[0-0]   value: 'type == "XCUIElementTypeApplication"'
+[0-0] }
+[0-0] 2025-09-24T12:07:29.393Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '01000000-0000-0000-855D-000000000000',
+[0-0]     ELEMENT: '01000000-0000-0000-855D-000000000000'
+[0-0]   }
+[0-0] ]
+[0-0] 2025-09-24T12:07:29.395Z INFO webdriver: COMMAND getElementRect("01000000-0000-0000-855D-000000000000")
+[0-0] 2025-09-24T12:07:29.395Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/element/01000000-0000-0000-855D-000000000000/rect
+[0-0] 2025-09-24T12:07:29.433Z INFO webdriver: RESULT { y: 0, x: 0, width: 430, height: 932 }
+[0-0] 2025-09-24T12:07:29.433Z INFO webdriver: COMMAND performActions(<object>)
+[0-0] 2025-09-24T12:07:29.434Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/actions
+[0-0] 2025-09-24T12:07:29.434Z INFO webdriver: DATA {
+[0-0]   actions: [
+[0-0]     {
+[0-0]       id: 'action1',
+[0-0]       type: 'pointer',
+[0-0]       parameters: [Object],
+[0-0]       actions: [Array]
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2025-09-24T12:07:31.761Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:07:31.761Z INFO webdriver: COMMAND releaseActions()
+[0-0] 2025-09-24T12:07:31.762Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/actions
+[0-0] 2025-09-24T12:07:31.764Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:07:32.265Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:07:32.267Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/element
+[0-0] 2025-09-24T12:07:32.267Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:07:32.448Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '06010000-0000-0000-855D-000000000000',
+[0-0]   ELEMENT: '06010000-0000-0000-855D-000000000000'
+[0-0] }
+[0-0] 2025-09-24T12:07:32.452Z INFO webdriver: COMMAND isElementDisplayed("06010000-0000-0000-855D-000000000000")
+[0-0] 2025-09-24T12:07:32.452Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/element/06010000-0000-0000-855D-000000000000/displayed
+[0-0] 2025-09-24T12:07:32.535Z INFO webdriver: RESULT true
+[0-0] 2025-09-24T12:07:33.542Z INFO webdriver: COMMAND executeScript("mobile: tap", <object>)
+[0-0] 2025-09-24T12:07:33.544Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b/execute/sync
+[0-0] 2025-09-24T12:07:33.544Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: tap',
+[0-0]   args: [ { x: 0, y: 0, elementId: '06010000-0000-0000-855D-000000000000' } ]
+[0-0] }
+[0-0] 2025-09-24T12:07:34.230Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:07:37.232Z DEBUG @wdio/utils:shim: Finished to run "afterTest" hook in 0ms
+[0-0] 2025-09-24T12:07:37.237Z DEBUG @wdio/utils:shim: Finished to run "after" hook in 0ms
+[0-0] 2025-09-24T12:07:37.238Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-09-24T12:07:37.238Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/07c7dd5f-9907-4e1a-b90e-3b9aada4067b
+[0-0] 2025-09-24T12:07:37.264Z INFO webdriver: RESULT null
+2025-09-24T12:07:37.378Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+[0-0] PASSED in iOS(18.0) on iOS - file:///test/specs/tap.on.native.js
+2025-09-24T12:07:37.378Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iOS #0-0] Running: on iOS
+[iOS #0-0] Session ID: 07c7dd5f-9907-4e1a-b90e-3b9aada4067b
+[iOS #0-0]
+[iOS #0-0] » test/specs/tap.on.native.js
+[iOS #0-0] Scroll into view and tap on native app
+[iOS #0-0]    ✓ should scroll into view and tap on Apps
+[iOS #0-0]
+[iOS #0-0] 1 passing (11.2s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:13  
+
+2025-09-24T12:07:37.379Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-09-24T12:07:37.631Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-09-24T12:07:37.632Z INFO @wdio/local-runner: shutting down
+2025-09-24T12:07:37.633Z INFO @wdio/cli:launcher: Run onComplete hook
+
+https://demo.app.perfectomobile.com/reporting/test/5dc49f72-eb3a-4365-ba74-536d57dac4be

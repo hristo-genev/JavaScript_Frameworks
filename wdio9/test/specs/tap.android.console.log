@@ -1,0 +1,172 @@
+➜  wdio9 git:(master) ✗ npx wdio run ./wdio.conf.js --spec tap.on.native.js
+
+Execution of 1 workers started at 2025-09-24T12:56:14.780Z
+
+2025-09-24T12:56:14.815Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-09-24T12:56:14.815Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-09-24T12:56:14.816Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-09-24T12:56:14.816Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-09-24T12:56:14.816Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.conf.js --spec tap.on.native.js
+2025-09-24T12:56:14.830Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-09-24T12:56:14.830Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-09-24T12:56:14.831Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+2025-09-24T12:56:14.833Z DEBUG @wdio/local-runner: Send command run to worker with cid "0-0"
+[0-0] 2025-09-24T12:56:16.393Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2025-09-24T12:56:16.645Z DEBUG @wdio/runner: init remote session
+[0-0] RUNNING in Android on Android - file:///test/specs/tap.on.native.js
+[0-0] 2025-09-24T12:56:17.392Z DEBUG @wdio/runner: init remote session
+[0-0] 2025-09-24T12:56:17.394Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-09-24T12:56:17.394Z INFO @wdio/utils: Connecting to existing driver at http://localhost:4723/wd/hub
+[0-0] 2025-09-24T12:56:17.401Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+[0-0] 2025-09-24T12:56:20.063Z DEBUG @wdio/utils:shim: Finished to run "beforeTest" hook in 0ms
+[0-0] 2025-09-24T12:56:20.064Z INFO webdriver: COMMAND startActivity("com.android.settings", "com.android.settings.Settings")
+[0-0] 2025-09-24T12:56:20.064Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/appium/device/start_activity
+[0-0] 2025-09-24T12:56:20.064Z INFO webdriver: DATA {
+[0-0]   appPackage: 'com.android.settings',
+[0-0]   appActivity: 'com.android.settings.Settings'
+[0-0] }
+[0-0] 2025-09-24T12:56:20.763Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:23.766Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="System"]")
+[0-0] 2025-09-24T12:56:23.767Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element
+[0-0] 2025-09-24T12:56:23.767Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="System"]' }
+[0-0] 2025-09-24T12:56:24.080Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:56:24.084Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="System"]")
+[0-0] 2025-09-24T12:56:24.084Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element
+[0-0] 2025-09-24T12:56:24.084Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="System"]' }
+[0-0] 2025-09-24T12:56:24.171Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:56:24.173Z INFO webdriver: COMMAND findElements("xpath", "//android.widget.ScrollView")
+[0-0] 2025-09-24T12:56:24.173Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/elements
+[0-0] 2025-09-24T12:56:24.173Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.ScrollView' }
+[0-0] 2025-09-24T12:56:24.236Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0076-ffff-ffff00000003',
+[0-0]     ELEMENT: '00000000-0000-0076-ffff-ffff00000003'
+[0-0]   },
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0076-ffff-ffff00000004',
+[0-0]     ELEMENT: '00000000-0000-0076-ffff-ffff00000004'
+[0-0]   }
+[0-0] ]
+[0-0] 2025-09-24T12:56:24.238Z INFO webdriver: COMMAND getElementRect("00000000-0000-0076-ffff-ffff00000003")
+[0-0] 2025-09-24T12:56:24.238Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element/00000000-0000-0076-ffff-ffff00000003/rect
+[0-0] 2025-09-24T12:56:24.250Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2025-09-24T12:56:24.251Z INFO webdriver: COMMAND performActions(<object>)
+[0-0] 2025-09-24T12:56:24.251Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/actions
+[0-0] 2025-09-24T12:56:24.251Z INFO webdriver: DATA {
+[0-0]   actions: [
+[0-0]     {
+[0-0]       id: 'action1',
+[0-0]       type: 'pointer',
+[0-0]       parameters: [Object],
+[0-0]       actions: [Array]
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2025-09-24T12:56:25.905Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:25.905Z INFO webdriver: COMMAND releaseActions()
+[0-0] 2025-09-24T12:56:25.905Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/actions
+[0-0] 2025-09-24T12:56:25.908Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:26.410Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="System"]")
+[0-0] 2025-09-24T12:56:26.411Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element
+[0-0] 2025-09-24T12:56:26.411Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="System"]' }
+[0-0] 2025-09-24T12:56:26.906Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at AndroidUiautomator2Driver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:56:26.908Z INFO webdriver: COMMAND findElements("xpath", "//android.widget.ScrollView")
+[0-0] 2025-09-24T12:56:26.909Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/elements
+[0-0] 2025-09-24T12:56:26.909Z INFO webdriver: DATA { using: 'xpath', value: '//android.widget.ScrollView' }
+[0-0] 2025-09-24T12:56:26.966Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0076-ffff-ffff00000003',
+[0-0]     ELEMENT: '00000000-0000-0076-ffff-ffff00000003'
+[0-0]   },
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0076-ffff-ffff00000004',
+[0-0]     ELEMENT: '00000000-0000-0076-ffff-ffff00000004'
+[0-0]   }
+[0-0] ]
+[0-0] 2025-09-24T12:56:26.968Z INFO webdriver: COMMAND getElementRect("00000000-0000-0076-ffff-ffff00000003")
+[0-0] 2025-09-24T12:56:26.968Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element/00000000-0000-0076-ffff-ffff00000003/rect
+[0-0] 2025-09-24T12:56:26.977Z INFO webdriver: RESULT { height: 1794, width: 1080, x: 0, y: 63 }
+[0-0] 2025-09-24T12:56:26.977Z INFO webdriver: COMMAND performActions(<object>)
+[0-0] 2025-09-24T12:56:26.977Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/actions
+[0-0] 2025-09-24T12:56:26.977Z INFO webdriver: DATA {
+[0-0]   actions: [
+[0-0]     {
+[0-0]       id: 'action2',
+[0-0]       type: 'pointer',
+[0-0]       parameters: [Object],
+[0-0]       actions: [Array]
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2025-09-24T12:56:28.630Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:28.630Z INFO webdriver: COMMAND releaseActions()
+[0-0] 2025-09-24T12:56:28.630Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/actions
+[0-0] 2025-09-24T12:56:28.632Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:29.134Z INFO webdriver: COMMAND findElement("xpath", "//*[@text="System"]")
+[0-0] 2025-09-24T12:56:29.134Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element
+[0-0] 2025-09-24T12:56:29.134Z INFO webdriver: DATA { using: 'xpath', value: '//*[@text="System"]' }
+[0-0] 2025-09-24T12:56:29.335Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '00000000-0000-0076-ffff-ffff00000099',
+[0-0]   ELEMENT: '00000000-0000-0076-ffff-ffff00000099'
+[0-0] }
+[0-0] 2025-09-24T12:56:29.336Z INFO webdriver: COMMAND isElementDisplayed("00000000-0000-0076-ffff-ffff00000099")
+[0-0] 2025-09-24T12:56:29.337Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/element/00000000-0000-0076-ffff-ffff00000099/displayed
+[0-0] 2025-09-24T12:56:29.345Z INFO webdriver: RESULT true
+[0-0] 2025-09-24T12:56:30.348Z INFO webdriver: COMMAND executeScript("mobile: clickGesture", <object>)
+[0-0] 2025-09-24T12:56:30.348Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630/execute/sync
+[0-0] 2025-09-24T12:56:30.349Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: clickGesture',
+[0-0]   args: [ { elementId: '00000000-0000-0076-ffff-ffff00000099' } ]
+[0-0] }
+[0-0] 2025-09-24T12:56:30.426Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:56:33.427Z DEBUG @wdio/utils:shim: Finished to run "afterTest" hook in 0ms
+[0-0] 2025-09-24T12:56:33.430Z DEBUG @wdio/utils:shim: Finished to run "after" hook in 0ms
+[0-0] 2025-09-24T12:56:33.430Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-09-24T12:56:33.430Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/7a662a19-b15e-499c-adfd-1a7983969630
+[0-0] 2025-09-24T12:56:33.524Z INFO webdriver: RESULT null
+2025-09-24T12:56:33.632Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+[0-0] PASSED in Android on Android - file:///test/specs/tap.on.native.js
+2025-09-24T12:56:33.632Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[Android #0-0] Running: on Android
+[Android #0-0] Session ID: 7a662a19-b15e-499c-adfd-1a7983969630
+[Android #0-0]
+[Android #0-0] » test/specs/tap.on.native.js
+[Android #0-0] Scroll into view and tap on native app
+[Android #0-0]    ✓ should scroll into view and tap on Apps
+[Android #0-0]
+[Android #0-0] 1 passing (13.4s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:18  
+
+2025-09-24T12:56:33.633Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-09-24T12:56:33.884Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-09-24T12:56:33.885Z INFO @wdio/local-runner: shutting down
+2025-09-24T12:56:33.885Z INFO @wdio/cli:launcher: Run onComplete hook

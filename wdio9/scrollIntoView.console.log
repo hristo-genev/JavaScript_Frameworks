@@ -1,0 +1,124 @@
+➜  wdio9 git:(master) ✗ npx wdio run ./wdio.conf.js --spec scrollIntoView.native.js
+
+Execution of 1 workers started at 2025-09-24T12:25:32.375Z
+
+2025-09-24T12:25:32.409Z INFO @wdio/cli:launcher: Run onPrepare hook
+2025-09-24T12:25:32.410Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2025-09-24T12:25:32.410Z INFO @wdio/xvfb: XvfbManager.init() called
+2025-09-24T12:25:32.410Z INFO @wdio/xvfb: Xvfb not needed on current platform
+2025-09-24T12:25:32.411Z INFO @wdio/local-runner: Start worker 0-0 with arg: run ./wdio.conf.js --spec scrollIntoView.native.js
+2025-09-24T12:25:32.430Z INFO @wdio/xvfb:ProcessFactory: xvfb-run not found, falling back to regular fork
+2025-09-24T12:25:32.430Z INFO @wdio/xvfb:ProcessFactory: ProcessFactory: shouldRun=false, isAvailable=false
+2025-09-24T12:25:32.430Z INFO @wdio/xvfb:ProcessFactory: Creating worker process with regular fork
+2025-09-24T12:25:32.432Z DEBUG @wdio/local-runner: Send command run to worker with cid "0-0"
+[0-0] 2025-09-24T12:25:34.029Z INFO @wdio/local-runner: Run worker command: run
+[0-0] 2025-09-24T12:25:34.235Z DEBUG @wdio/runner: init remote session
+[0-0] RUNNING in iOS(18.0) on iOS - file:///test/specs/scrollIntoView.native.js
+[0-0] 2025-09-24T12:25:34.927Z DEBUG @wdio/runner: init remote session
+[0-0] 2025-09-24T12:25:34.928Z INFO webdriver: Initiate new session using the WebDriver protocol
+[0-0] 2025-09-24T12:25:34.928Z INFO @wdio/utils: Connecting to existing driver at http://localhost:4723/wd/hub
+[0-0] 2025-09-24T12:25:34.934Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session
+[0-0] 2025-09-24T12:25:38.427Z DEBUG @wdio/utils:shim: Finished to run "beforeTest" hook in 1ms
+[0-0] 2025-09-24T12:25:38.428Z INFO webdriver: COMMAND executeScript("mobile: launchApp", <object>)
+[0-0] 2025-09-24T12:25:38.428Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/execute/sync
+[0-0] 2025-09-24T12:25:38.428Z INFO webdriver: DATA {
+[0-0]   script: 'mobile: launchApp',
+[0-0]   args: [ { bundleId: 'com.apple.Preferences' } ]
+[0-0] }
+[0-0] 2025-09-24T12:25:38.462Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:25:41.470Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:25:41.471Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/element
+[0-0] 2025-09-24T12:25:41.471Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:25:41.582Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:143:13)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:97:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:24:14)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:25:41.587Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:25:41.587Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/element
+[0-0] 2025-09-24T12:25:41.587Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:25:41.662Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+[0-0]     '    at XCUITestDriver.doNativeFind (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:143:13)\n' +
+[0-0]     '    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n' +
+[0-0]     '    at XCUITestDriver.findNativeElementOrElements (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:97:12)\n' +
+[0-0]     '    at XCUITestDriver.findElOrEls (/Users/hgenev/.appium/node_modules/appium-xcuitest-driver/lib/commands/find.js:24:14)\n' +
+[0-0]     '    at XCUITestDriver.findElOrElsWithProcessing (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)\n' +
+[0-0]     '    at XCUITestDriver.findElement (/Users/hgenev/appium/versions/appium219/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)'
+[0-0] }
+[0-0] 2025-09-24T12:25:41.664Z INFO webdriver: COMMAND findElements("-ios predicate string", "type == "XCUIElementTypeApplication"")
+[0-0] 2025-09-24T12:25:41.664Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/elements
+[0-0] 2025-09-24T12:25:41.664Z INFO webdriver: DATA {
+[0-0]   using: '-ios predicate string',
+[0-0]   value: 'type == "XCUIElementTypeApplication"'
+[0-0] }
+[0-0] 2025-09-24T12:25:41.765Z INFO webdriver: RESULT [
+[0-0]   {
+[0-0]     'element-6066-11e4-a52e-4f735466cecf': '01000000-0000-0000-855D-000000000000',
+[0-0]     ELEMENT: '01000000-0000-0000-855D-000000000000'
+[0-0]   }
+[0-0] ]
+[0-0] 2025-09-24T12:25:41.767Z INFO webdriver: COMMAND getElementRect("01000000-0000-0000-855D-000000000000")
+[0-0] 2025-09-24T12:25:41.767Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/element/01000000-0000-0000-855D-000000000000/rect
+[0-0] 2025-09-24T12:25:41.805Z INFO webdriver: RESULT { y: 0, x: 0, width: 430, height: 932 }
+[0-0] 2025-09-24T12:25:41.806Z INFO webdriver: COMMAND performActions(<object>)
+[0-0] 2025-09-24T12:25:41.806Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/actions
+[0-0] 2025-09-24T12:25:41.806Z INFO webdriver: DATA {
+[0-0]   actions: [
+[0-0]     {
+[0-0]       id: 'action1',
+[0-0]       type: 'pointer',
+[0-0]       parameters: [Object],
+[0-0]       actions: [Array]
+[0-0]     }
+[0-0]   ]
+[0-0] }
+[0-0] 2025-09-24T12:25:44.144Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:25:44.144Z INFO webdriver: COMMAND releaseActions()
+[0-0] 2025-09-24T12:25:44.145Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/actions
+[0-0] 2025-09-24T12:25:44.146Z INFO webdriver: RESULT null
+[0-0] 2025-09-24T12:25:44.647Z INFO webdriver: COMMAND findElement("name", "Apps")
+[0-0] 2025-09-24T12:25:44.647Z INFO webdriver: [POST] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/element
+[0-0] 2025-09-24T12:25:44.647Z INFO webdriver: DATA { using: 'name', value: 'Apps' }
+[0-0] 2025-09-24T12:25:44.807Z INFO webdriver: RESULT {
+[0-0]   'element-6066-11e4-a52e-4f735466cecf': '12010000-0000-0000-855D-000000000000',
+[0-0]   ELEMENT: '12010000-0000-0000-855D-000000000000'
+[0-0] }
+[0-0] 2025-09-24T12:25:44.809Z INFO webdriver: COMMAND isElementDisplayed("12010000-0000-0000-855D-000000000000")
+[0-0] 2025-09-24T12:25:44.809Z INFO webdriver: [GET] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc/element/12010000-0000-0000-855D-000000000000/displayed
+[0-0] 2025-09-24T12:25:44.891Z INFO webdriver: RESULT true
+[0-0] 2025-09-24T12:25:48.894Z DEBUG @wdio/utils:shim: Finished to run "afterTest" hook in 0ms
+[0-0] 2025-09-24T12:25:48.904Z DEBUG @wdio/utils:shim: Finished to run "after" hook in 0ms
+[0-0] 2025-09-24T12:25:48.905Z INFO webdriver: COMMAND deleteSession()
+[0-0] 2025-09-24T12:25:48.905Z INFO webdriver: [DELETE] http://localhost:4723/wd/hub/session/dc43c5f8-dd56-4f42-af52-9d6d85438bfc
+[0-0] 2025-09-24T12:25:48.925Z INFO webdriver: RESULT null
+2025-09-24T12:25:49.041Z DEBUG @wdio/local-runner: Runner 0-0 finished with exit code 0
+[0-0] PASSED in iOS(18.0) on iOS - file:///test/specs/scrollIntoView.native.js
+2025-09-24T12:25:49.041Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+
+ "spec" Reporter:
+------------------------------------------------------------------
+[iOS #0-0] Running: on iOS
+[iOS #0-0] Session ID: dc43c5f8-dd56-4f42-af52-9d6d85438bfc
+[iOS #0-0]
+[iOS #0-0] » test/specs/scrollIntoView.native.js
+[iOS #0-0] Scroll into view in native app
+[iOS #0-0]    ✓ should scroll "Apps" button into view
+[iOS #0-0]
+[iOS #0-0] 1 passing (10.5s)
+
+
+Spec Files:	 1 passed, 1 total (100% completed) in 00:00:16  
+
+2025-09-24T12:25:49.042Z INFO @wdio/local-runner: Shutting down spawned worker
+2025-09-24T12:25:49.294Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully
+2025-09-24T12:25:49.295Z INFO @wdio/local-runner: shutting down
+2025-09-24T12:25:49.295Z INFO @wdio/cli:launcher: Run onComplete hook
